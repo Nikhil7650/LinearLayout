@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+    <TextView
+        android:id="@+id/maintxt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="0dp"
+        android:height="55dp"
+        android:background="@color/purple"
+        android:gravity="center"
+        android:textStyle="bold"
+        android:text="TODO LIST"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textSize="25dp"
+        android:visibility="visible"
+        tools:ignore="MissingConstraints,TextContrastCheck" />
+
+    <EditText
+        android:id="@+id/enttxt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/maintxt"
+        android:layout_marginTop="60dp"
+        android:paddingLeft="20dp"
+        android:hint="Enter the text to add"
+        tools:ignore="MissingConstraints,TouchTargetSizeCheck" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/addbut"
+            android:textStyle="bold"
+            android:layout_width="126dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/enttxt"
+            android:layout_marginLeft="40dp"
+            android:layout_marginTop="230dp"
+            android:textColor="@color/white"
+
+            android:background="@color/purple"
+            android:text="ADD">
+
+
+        </Button>
+
+        <Button
+            android:id="@+id/viewbut"
+            android:layout_width="130dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="230dp"
+            android:layout_marginRight="135dp"
+            android:background="@color/purple"
+            android:text="VIEW"
+            android:textColor="@color/white"
+            android:textStyle="bold"
+            android:gravity="center">
+
+
+        </Button>
+    </LinearLayout>
+    <ImageView
+        android:layout_width="650dp"
+        android:layout_height="650dp"
+        android:src="@drawable/todo1"
+        android:layout_marginTop="410dp"
+        android:layout_marginLeft="110dp">
+
+    </ImageView>
+
+
+
+
+</RelativeLayout>
